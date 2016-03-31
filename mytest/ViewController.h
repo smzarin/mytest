@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UITextFieldDelegate>
 
+@property (strong, nonatomic) IBOutlet UITextField *acronymText;
+@property (strong, nonatomic) IBOutlet UILabel *acronymData;
+- (IBAction)acronymButton:(id)sender;
 
 @end
 
